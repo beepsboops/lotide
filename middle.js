@@ -9,9 +9,6 @@
 
 // ACTUAL FUNCTION
 
-
-
-
 const middle = function(array) {
   evenArrayMiddleIndex1 = [];
   let evenArrayMiddleIndex2 = [];
@@ -34,12 +31,12 @@ const middle = function(array) {
   }
 };
 
+module.exports = middle
+
 // TEST CODE
-// ...
 
 
 
-console.log(middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14]))
 /*
 NOTES
 
