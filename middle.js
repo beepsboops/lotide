@@ -10,26 +10,32 @@
 // ACTUAL FUNCTION
 
 const middle = function(array) {
-  evenArrayMiddleIndex1 = [];
-  let evenArrayMiddleIndex2 = [];
+  let evenArrayMiddleIndex1 = "";
+  let evenArrayMiddleIndex2 = "";
+  let oddArrayMiddleIndex = [];
   let newArray = [];
   if (array.length % 2 === 0) {
-    evenArrayMiddleIndex1 = array.length / 2
-    evenArrayMiddleIndex2 = (array.length / 2) - 1;
-    newArray.push(array[evenArrayMiddleIndex1])
-    newArray.push(array[evenArrayMiddleIndex2])
-    // console.log(evenArrayMiddleIndex1)
+    evenArrayMiddleIndex1 = array.length / 2;
+    evenArrayMiddleIndex2 = (array.length / 2) + 1;
+    newArray.push(evenArrayMiddleIndex1);
+    newArray.push(evenArrayMiddleIndex2);
     // evenArrayMiddleElement2 = (array.length / 2) + 1;
     // console.log(evenArrayMiddleElement2)
-    return 'The middle elements of this array are: ' + newArray;
+    return newArray;
   }
   else {
-    let oddArrayMiddleIndex = [];
+
     oddArrayMiddleIndex = (array.length + 1) / 2;
-    newArray.push(array[oddArrayMiddleIndex])
-    return 'The middle element of this array is: ' + oddArrayMiddleIndex;
+    // console.log(oddArrayMiddleIndex)
+    newArray.push(oddArrayMiddleIndex)
+    return newArray;
   }
 };
+
+console.log(middle([1, 2, 3]))
+console.log(middle([1, 2, 3, 4]))
+// console.log('test')
+// console.log("1")
 
 module.exports = middle
 
